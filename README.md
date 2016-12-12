@@ -13,7 +13,7 @@
 - 创建同步的字段： curl -XPUT localhost:9200/yourdb/_mapping/tableName -d '{...}'
 - 编译： mvn clean package
 - **同步**： java -Dconfig=local -jar mysql-river.jar
-- **初始化**： java -Dconfig=local -jar mysql-init.jar yourdb.tableName.field>12345
+- **初始化**： java -Dconfig=local -jar mysql-river.jar  yourdb.tableName.uniqueField gte='5263463439' lte=
 
 ## lrconfig-{}.properties
     # es
